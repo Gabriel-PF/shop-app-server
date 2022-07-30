@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const TravelSchema = mongoose.Schema({
+const travelSchema = mongoose.Schema({
     writer: {
         type: Schema.Types.ObjectId,
         ref: 'User',
@@ -36,6 +36,6 @@ const TravelSchema = mongoose.Schema({
 
 
 
-const Product = mongoose.model('Travel', productSchema);
+const Travel = mongoose.model('Travel', travelSchema);
 
-module.exports = { Product }
+module.exports = Travel

@@ -37,6 +37,6 @@ const adSchema = mongoose.Schema({
 }, { timestamps: true })
 
 
-const Product = mongoose.model('Ad', productSchema);
+const Ad = mongoose.model('Ad', adSchema);
 
-module.exports = { Product }
+module.exports =  Ad 
